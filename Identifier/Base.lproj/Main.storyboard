@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aug-6i-U2v">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--What is this thing?-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Identifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KSg-6O-3Ff">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.89562821061643838" green="0.56672720829356726" blue="0.82663139696649035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-ph-WND">
+                                <rect key="frame" x="364" y="646" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="X9a-hh-3Bu"/>
+                                    <constraint firstAttribute="height" constant="30" id="zK3-c9-0oF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" image="arrowshape.turn.up.right.circle.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fu-9O-7Dp"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question-mark" translatesAutoresizingMaskIntoConstraints="NO" id="ySa-oL-oVQ">
+                                <rect key="frame" x="112.66666666666669" y="298" width="189" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H52-57-gLs">
+                                <rect key="frame" x="14" y="684" width="388" height="61"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <string key="text">I believe this is a XXXXXXXXXXX; but i'm not certain.
+(100%)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H52-57-gLs" firstAttribute="top" secondItem="ySa-oL-oVQ" secondAttribute="bottom" constant="130" id="0V2-LP-anF"/>
+                            <constraint firstItem="H52-57-gLs" firstAttribute="top" secondItem="ySa-oL-oVQ" secondAttribute="bottom" constant="130" id="8Fs-XM-ElY"/>
+                            <constraint firstItem="d1p-iI-VTs" firstAttribute="trailing" secondItem="H52-57-gLs" secondAttribute="trailing" constant="12" id="8Tg-Za-jwG"/>
+                            <constraint firstItem="H52-57-gLs" firstAttribute="leading" secondItem="d1p-iI-VTs" secondAttribute="leading" constant="14" id="A6k-Xf-TmI"/>
+                            <constraint firstItem="ySa-oL-oVQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="92.670000000000002" id="Bpt-eQ-Sr1"/>
+                            <constraint firstItem="KSg-6O-3Ff" firstAttribute="leading" secondItem="d1p-iI-VTs" secondAttribute="leading" id="Kdz-t9-Vwe"/>
+                            <constraint firstItem="KSg-6O-3Ff" firstAttribute="trailing" secondItem="d1p-iI-VTs" secondAttribute="trailing" id="VTJ-sK-K7V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ySa-oL-oVQ" secondAttribute="trailing" constant="92.329999999999998" id="Vc6-2u-NLw"/>
+                            <constraint firstItem="d1p-iI-VTs" firstAttribute="trailing" secondItem="CsC-ph-WND" secondAttribute="trailing" constant="20" id="bEY-tm-sPw"/>
+                            <constraint firstItem="KSg-6O-3Ff" firstAttribute="top" secondItem="d1p-iI-VTs" secondAttribute="top" id="buP-jj-sBj"/>
+                            <constraint firstItem="CsC-ph-WND" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="558" id="fcj-1h-Uvh"/>
+                            <constraint firstAttribute="bottom" secondItem="KSg-6O-3Ff" secondAttribute="bottom" id="jB3-MU-PtL"/>
+                            <constraint firstItem="ySa-oL-oVQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="210" id="jZY-xx-eqJ"/>
+                            <constraint firstItem="H52-57-gLs" firstAttribute="top" secondItem="CsC-ph-WND" secondAttribute="bottom" constant="8" id="pRR-gn-Qnk"/>
+                            <constraint firstItem="CsC-ph-WND" firstAttribute="leading" secondItem="d1p-iI-VTs" secondAttribute="leading" constant="364" id="tp5-K3-Bx2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d1p-iI-VTs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="What is this thing?" id="D5G-bn-agw">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="camera" id="AX6-rs-2VD">
+                            <color key="tintColor" red="0.89562821059999997" green="0.56672720830000001" blue="0.82663139699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="woJ-Ly-Z8Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="homeImage" destination="ySa-oL-oVQ" id="mud-Xn-FHl"/>
+                        <outlet property="identifierLabel" destination="H52-57-gLs" id="ldr-Am-r9d"/>
+                        <outlet property="imageView" destination="KSg-6O-3Ff" id="eEd-TT-D74"/>
+                        <outlet property="shareButton" destination="CsC-ph-WND" id="4QJ-EO-t5r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="99.107142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WVy-ZL-ope">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aug-6i-U2v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dpz-zQ-KCc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vip-yu-fd9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BS6-po-cgg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="question-mark" width="256" height="256"/>
+    </resources>
+</document>
